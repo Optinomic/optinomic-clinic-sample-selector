@@ -107,7 +107,7 @@ Selects current clinic-sample based on the clinic-sample md-array.
                 event_value = dimensions[event_id].array.length - 1;
             };
 
-            console.log('1) __valueChanged', event_id, event_value, dimensions, data_dive);
+            console.log('__valueChanged', event_id, event_value, dimensions, data_dive);
 
 
             dimensions[event_id].selected = event_value;
@@ -163,11 +163,11 @@ Selects current clinic-sample based on the clinic-sample md-array.
         },
 
 
-        ready: function() {
+        ready: function() {},
+
+        attached: function() {
             this.__init();
         },
-
-        attached: function() {},
 
         properties: {
             data_dive: {
