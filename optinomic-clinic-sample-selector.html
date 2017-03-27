@@ -159,6 +159,7 @@ Selects current clinic-sample based on the clinic-sample md-array.
             };
 
             this.set('return_data', return_obj);
+            this.fire('clinic-sample-changed');
             console.log('__getDataDiveObj', data_dive, return_obj);
         },
 
